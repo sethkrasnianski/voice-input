@@ -1,4 +1,11 @@
 {
+  "rules": {
+    "no-param-reassign": [2, {
+      "props": false
+    }],
+    "no-alert": 0,
+    "comma-dangle": 0
+  },
   "extends": "airbnb-base",
   "installedESLint": true,
   "plugins": [
@@ -6,6 +13,11 @@
   ],
   "globals": {
     "document": true,
-    "window": true
+    "window": true,
+    "navigator": true,
+    "alert": true,
+    "Recorder": true,
+    "FormData": true,
+    "$": true
   }
 }
